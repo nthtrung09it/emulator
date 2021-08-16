@@ -1,13 +1,13 @@
 exports.OS_PICKER = {
-  ANDROID: 'View Android emulators',
-  ANDROID_COLD: 'View Android cold boot emulators',
-  IOS: 'View iOS simulators'
+  ANDROID: 'View Android emulators (kernel)',
+  ANDROID_COLD: 'View Android cold boot emulators (kernel)',
+  IOS: 'View iOS simulators (kernel)'
 }
 
 exports.ANDROID_COMMANDS = {
   LIST_AVDS: ' -list-avds',
-  RUN_AVD: ' -avd ',
-  RUN_AVD_COLD: ' -no-snapshot-load -avd '
+  RUN_AVD: ' -dns-server 8.8.8.8 -avd ',
+  RUN_AVD_COLD: ' -dns-server -no-snapshot-load -avd '
 }
 
 exports.IOS_COMMANDS = {
